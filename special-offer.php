@@ -70,6 +70,8 @@ if( ! class_exists( 'Special_Offer_Main' ) ) {
         public function inc() {
 
             require( SPECIAL_OFFER_DIR_PATH . '/inc/settings.php' );
+            require( SPECIAL_OFFER_DIR_PATH . '/inc/custom-metabox.php' );
+            
             require( SPECIAL_OFFER_DIR_PATH . '/inc/functions.php' );
             require( SPECIAL_OFFER_DIR_PATH . '/inc/hooks.php' );
 

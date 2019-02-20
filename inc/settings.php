@@ -23,7 +23,7 @@ if( ! function_exists( 'special_offer_crb_options' ) ) {
                 Field::make( 'checkbox', 'special_offer_enable', __( 'Special Offer Enable', 'so' ) )
                     ->set_default_value( true ),
                 Field::make( 'text', 'special_offer_label_sticky', __( 'Label Sticky', 'so' ) )
-                    ->set_default_value( 'Special offer - Free setup demo data' ),
+                    ->set_default_value( '<strong>Special Offer</strong> <br /> Free setup demo data' ),
                 Field::make( 'text', 'special_offer_link', __( 'Direct Link', 'so' ) )
                     ->set_default_value( '#' ),
                 Field::make( 'rich_text', 'special_offer_hover_desc', __( 'Description (on hover)', 'so' ) )

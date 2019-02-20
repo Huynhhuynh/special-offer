@@ -13,7 +13,9 @@ if( ! function_exists( 'special_offer_enqueue_scripts' ) ) {
      */
     function special_offer_enqueue_scripts() {
 
-        $special_offer_enable = carbon_get_theme_option( 'special_offer_enable' );
+        $special_offer_opts = special_offer_data();
+        extract( $special_offer_opts );
+
         if( true != $special_offer_enable ) return;
 
         wp_enqueue_style( 'special-offer-css', SPECIAL_OFFER_DIR_URL . '/assets/css/special-offer.css', false, SPECIAL_OFFER_VERSION );
