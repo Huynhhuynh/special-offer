@@ -1,0 +1,80 @@
+.special-offer-container {
+  position: fixed;
+  left: 20px;
+  bottom: 0px;
+  padding-left: 60px;
+  background: #FFF;
+  box-shadow: 0px 7px 18px -7px rgba(1, 1, 1, 0.2);
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+}
+.special-offer-container .__close {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background: #f0506e;
+  right: -6px;
+  top: -6px;
+  border-radius: 30px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+}
+.special-offer-container .__icon {
+  position: absolute;
+  left: 0;
+  width: 60px;
+  height: 100%;
+  background: #1e87f0;
+}
+.special-offer-container .__icon svg {
+  position: absolute;
+  width: 60%;
+  height: auto;
+  left: 20%;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  fill: #FFF;
+}
+.special-offer-container .__label {
+  font-size: 16px;
+  max-width: calc(100% - 20px);
+  width: 180px;
+  padding: 10px;
+  display: inline-block;
+  color: #222;
+}
+.special-offer-container .__desc {
+  position: absolute;
+  left: 0;
+  bottom: 100%;
+  background: #f5f5f5;
+  color: #222;
+  padding: 15px;
+  font-size: 16px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+}
+.special-offer-container:hover .__close {
+  visibility: visible;
+  opacity: 1;
+}
+.special-offer-container:hover .__desc {
+  visibility: visible;
+  opacity: 1;
+  bottom: calc(100% + 20px);
+}
+
+body.special-offer-is-active .special-offer-container {
+  visibility: visible;
+  opacity: 1;
+  bottom: 20px;
+}
+
+/*# sourceMappingURL=special-offer.css.map */
