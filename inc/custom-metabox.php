@@ -30,7 +30,7 @@ if( ! function_exists( 'special_offer_custom_metabox_page' ) ) {
                         )
                     ) ),
                 Field::make( 'text', 'special_offer_label_sticky', __( 'Label Sticky', 'so' ) )
-                    ->set_default_value( 'Special offer - Free setup demo data' )
+                    ->set_default_value( '<strong>Special Offer</strong> <br /> Free setup demo data' )
                     ->set_conditional_logic( array(
                         array(
                             'field' => 'special_offer_override_global_options',

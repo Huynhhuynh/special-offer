@@ -9,6 +9,7 @@
   opacity: 0;
   transition: 0.3s ease;
   -webkit-transition: 0.3s ease;
+  z-index: 9999;
 }
 .special-offer-container .__close {
   position: absolute;
