@@ -36,7 +36,7 @@ if( ! function_exists('special_offer_plugin_links') ) {
     function special_offer_plugin_links( $links ) {
   
         $plugin_links = array(
-            '<a href="'. add_query_arg( array( 'page' => 'crb_carbon_fields_container_s3_media.php' ), admin_url( 'options-general.php' ) ) .'">' . __( 'Settings', 'so' ) . '</a>',
+            '<a href="'. add_query_arg( array( 'page' => 'crb_carbon_fields_container_special_offer_settings.php' ), admin_url( 'options-general.php' ) ) .'">' . __( 'Settings', 'so' ) . '</a>',
             '<a href="mailto:bearsthemes@gmail.com">' . __( 'Support', 'so' ) . '</a>',
         );
   
@@ -71,7 +71,7 @@ if( ! class_exists( 'Special_Offer_Main' ) ) {
 
             require( SPECIAL_OFFER_DIR_PATH . '/inc/settings.php' );
             require( SPECIAL_OFFER_DIR_PATH . '/inc/custom-metabox.php' );
-            
+
             require( SPECIAL_OFFER_DIR_PATH . '/inc/functions.php' );
             require( SPECIAL_OFFER_DIR_PATH . '/inc/hooks.php' );
 
